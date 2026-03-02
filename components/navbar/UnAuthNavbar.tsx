@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { ReactNode, useState } from "react";
 import { routes, unauthNavbarRoutes } from "@/lib/routes";
 import Image from "next/image";
-import { ArrowLongRight } from "@/icons";
+import { ArrowLongRight, XMark } from "@/icons";
+import { HamburgerMenu } from "@/icons/HamburgerMenu";
 
 interface UnAuthNavbarProps {
   isDarkText?: boolean;
@@ -35,7 +36,9 @@ export function UnAuthNavbar({
             aria-expanded={open}
             aria-controls="mobile-menu"
           >
-            Menu
+            <HamburgerMenu
+              class={`${isDarkText ? "text-black" : "text-white"} size-7`}
+            />
           </button>
         </div>
 
@@ -81,10 +84,11 @@ export function UnAuthNavbar({
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className="rounded-md p-2 text-gray-700 hover:bg-gray-100"
+                // className="rounded-md p-2 text-gray-700 hover:bg-gray-100"
+                className="-m-2.5 rounded-md p-2.5 text-gray-700"
                 aria-label="Close menu"
               >
-                X
+                <XMark />
               </button>
             </div>
             <div className="mt-6 flex flex-col gap-2 border-t border-gray-200 pt-6">
