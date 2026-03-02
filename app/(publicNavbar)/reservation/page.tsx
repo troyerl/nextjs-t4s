@@ -48,7 +48,7 @@ export default async function ReservationPage() {
               {events.map((event) => (
                 <li
                   key={event._id}
-                  className="flex w-full flex-col rounded-xl border border-gray-200 bg-white p-6 text-center shadow-md transition duration-200 ease-in-out hover:scale-[1.01] hover:shadow-lg md:max-w-[500px]"
+                  className="flex w-full flex-col rounded-xl border border-gray-200 bg-white p-6 text-center shadow-md transition duration-200 ease-in-out hover:scale-[1.01] hover:shadow-lg md:max-w-125"
                 >
                   <div className="flex grow flex-col">
                     <h3 className="text-xl font-semibold text-gray-900">
