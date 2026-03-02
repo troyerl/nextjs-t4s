@@ -30,9 +30,8 @@ export default function Footer() {
           <Image
             src={"/assets/img/logo.png"}
             alt={"Tools-4-Schools Logo"}
-            className="h-[20vh] w-auto md:h-[30vh]"
-            width={900}
-            height={300}
+            width={60}
+            height={60}
           />
           <p>
             Supporting local teachers with the tools to help children succeed in
