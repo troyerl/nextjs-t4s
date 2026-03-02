@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Tools-4-Schools",
+  "short_name": "T4S",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#193363",
+  "description": "Supporting local teachers with classroom supplies."
+}
