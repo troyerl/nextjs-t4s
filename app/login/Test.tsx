@@ -6,7 +6,7 @@ import { invalidateServerCache } from "../actions";
 const Test = () => {
   const clearCacheClick = async () => {
     await invalidateServerCache("/inventory");
-    Client.invalidateQueries({ queryKey: ["posts"] });
+    Client.invalidateQueries({ queryKey: ["inventory", true] });
   };
   return (
     <button className="bg-primary" onClick={clearCacheClick}>
