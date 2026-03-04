@@ -6,6 +6,7 @@ import { UnAuthNavbar } from "@/components/navbar/UnAuthNavbar";
 import { routes } from "@/lib/routes";
 import { isLoggedIn } from "@/lib/session";
 import Image from "next/image";
+import Test from "./Test";
 
 export const metadata: Metadata = {
   title: "Login | T4S",
@@ -20,6 +21,7 @@ export default async function LoginPage() {
   return (
     <div className="flex min-h-screen w-screen flex-col">
       <UnAuthNavbar />
+      <Test />
       <div className="screen-width-border flex grow flex-col items-center justify-center py-10">
         <div className="w-full md:w-125">
           <div className="mb-6 flex items-start justify-between">
