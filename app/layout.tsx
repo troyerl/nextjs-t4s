@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SnackbarProvider } from "@/components/snackbar/SnackbarProvider";
 import { Montserrat } from "next/font/google";
 import "../globals.css";
+import Providers from "./providers";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -27,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} antialiased`}>
-        <SnackbarProvider>{children}</SnackbarProvider>
+        <SnackbarProvider>
+          <Providers>{children}</Providers>
+        </SnackbarProvider>
       </body>
     </html>
   );
